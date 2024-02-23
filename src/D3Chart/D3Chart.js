@@ -53,9 +53,9 @@ function D3Chart() {
             return d.value;
         });
 
-        var arcTest = d3.arc().outerRadius(radius * 0.8).innerRadius(radius * 0.4);
+        var arcTest = d3.svg.arc().outerRadius(radius * 0.8).innerRadius(radius * 0.4);
 
-        const outerArc = d3.arc().innerRadius(radius * 0.9).outerRadius(radius * 0.9);
+        const outerArc = d3.svg.arc().innerRadius(radius * 0.9).outerRadius(radius * 0.9);
 
         svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 

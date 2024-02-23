@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,9 +27,9 @@ function App() {
         <Hero/>
         <div className="mainContainer"> 
           <Routes>
-            <Route path="/about" element={<AboutPage />}/> 
-            <Route path="/login" element={<LoginPage />}/> 
             <Route path="/" element={<HomePage />}/> 
+            <Route path="/about" element={<AboutPage />}/> 
+            <Route path="/login" element={<LoginPage />}/>  
           </Routes>
         </div>
         <Footer/>

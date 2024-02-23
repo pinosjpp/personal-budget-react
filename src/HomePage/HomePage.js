@@ -64,19 +64,17 @@ function HomePage() {
                 </p>
             </article>
     
-            <article>
-                <h1>Chart</h1>
-                <p>
-                    <canvas id="myChart" width="600" height="600" alt="Budget distribution chart"></canvas> 
-                    <PieChart/>
-                </p>
-            </article>
-
-            <article>
-                <h1>Chart2</h1>
-                <section id="d3Chart" alt="Budget distribution chart"></section>
-                <D3Chart/>
-            </article>
+            <div className="text-box">
+            <h1>Chart</h1>
+            <p>
+              <PieChart/>
+            </p>
+            </div>
+                
+          <div className="text-box">
+            <h1>d3js Chart</h1>
+              <D3Chart/>
+          </div>
 
         </section>
 
